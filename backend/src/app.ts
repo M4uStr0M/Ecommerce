@@ -19,8 +19,8 @@ app.get('/health', (_req, res) => {
 })
 
 
-app.use(errorHandler)
 app.use(notFound)
+app.use(errorHandler)
 
 async function main() {
     await connectDB()

@@ -22,7 +22,7 @@ export function ok<T>(data: T, meta?: Record<string, unknown>): ApiEnvelope<T> {
 
 export function fail<T>(message: string, code?: string): ApiEnvelope<null> {
     return {
-        status: 'success',
+        status: 'error',
         data: null,
         errors: [{ message, code }]
     };

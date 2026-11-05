@@ -6,7 +6,10 @@ import process from 'node:process'
 const envSchema = z.object({
     PORT: z.string().default("3000"),
     MONGO_URI: z.string(),
-    FRONTEND_URL : z.string()
+    FRONTEND_URL : z.string(),
+    CLERK_PUBLISHABLE_KEY:z.string(),
+    CLERK_SECRET_KEY:z.string()
+
 })
 
 

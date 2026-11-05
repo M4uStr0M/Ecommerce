@@ -20,6 +20,7 @@
     "typescript": "^7.0.2"
   },
   "dependencies": {
+    "@clerk/express": "^2.1.88",
     "bcryptjs": "^3.0.3",
     "cookieparser": "^0.1.0",
     "cors": "^2.8.6",
